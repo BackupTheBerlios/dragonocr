@@ -30,9 +30,9 @@
     <DocumentationFile>bin\Debug\OCR Image Manipulation.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dragonfly OCR, Version=1.0.2049.19467, Culture=neutral">
+    <Reference Include="dragonfly OCR, Version=1.0.2050.29089, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dateien Paul\SharpDevelop Projects\dragonfly OCR\bin\Debug\dragonfly OCR.dll</HintPath>
+      <HintPath>..\..\..\..\Dateien Paul\SharpDevelop Projects\dragonfly OCR\bin\Release\dragonfly OCR.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

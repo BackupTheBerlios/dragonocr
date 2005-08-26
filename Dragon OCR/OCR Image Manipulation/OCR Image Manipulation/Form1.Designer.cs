@@ -38,6 +38,8 @@ namespace OCR_Image_Manipulation
             this.bildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.erstellenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lines = new System.Windows.Forms.ToolStripStatusLabel();
+            this.words = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.imageBox = new System.Windows.Forms.PictureBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -53,6 +55,7 @@ namespace OCR_Image_Manipulation
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.width = new System.Windows.Forms.ToolStripTextBox();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -118,12 +121,23 @@ namespace OCR_Image_Manipulation
             // 
             // statusStrip1
             // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lines,
+            this.words});
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             this.statusStrip1.Location = new System.Drawing.Point(0, 370);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(681, 23);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lines
+            // 
+            this.lines.Name = "lines";
+            // 
+            // words
+            // 
+            this.words.Name = "words";
             // 
             // toolStripContainer1
             // 
@@ -261,8 +275,9 @@ namespace OCR_Image_Manipulation
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "OCR Image Manipulation Test";
+            this.Text = "OCR Test";
             this.menuStrip1.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.PerformLayout();
@@ -301,6 +316,8 @@ namespace OCR_Image_Manipulation
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripStatusLabel words;
+        private System.Windows.Forms.ToolStripStatusLabel lines;
     }
 }
 

@@ -122,7 +122,11 @@ namespace OCR_Image_Manipulation
         private void toolStripButton3_Click_1(object sender, EventArgs e)
         {
             dr = new Detector(imgrec.Image);
-            dr.getWords();
+
+            lines.Text = "Zeilen: " + dr.Lines.Count;
+            words.Text = "Wörter: " + dr.Words.Count;
+
+            
         }
 
     
